@@ -1,10 +1,12 @@
-cPixelDungeon- New version (1.7.1c.42sco)
+cPixelDungeon- New version (1.7.1c.51sco)
 
 I have created a mod (cPixelDungeon) which makes PixelDungeon a bit more fun for me. Mostly, I have taken a lot of unknowns out, as well as increasing the hero's Hit Points and Strength at the beginning. I thought I would share.
 
 FEATURES:
-
-Ring Of Detection (no use when cheats are on) now gives 100 turns of Mind Vision
+Able to install without uninstalling PixelDungeon
+Scroll Of Identity is no longer present as a random scroll
+Scrolls Magic Mapping, Remove Curse and Psionic Blast are now more common
+Ring Of Detection (no use when cheats are on) instead gives 100 turns of Mind Vision
 Toggle cheats on or off in settings menu
 HP starts with an extra 10 points
 Strength starts with an extra 10 points
@@ -16,24 +18,22 @@ Scroll of Upgrade on every level
 Added "c" to clock in bottom left corner (no more pretending you beat the original :-) )
 
 INSTALLATION:
-
-NOTE: You will have to uninstall PD to install this. If you want to save your games, you should back up PD before you install this.
-
-Since this is not in the appstore, you need to: Uninstall PD. Download the linked apk file below. Somehow get it to your phone (email, SD Card). Then, you need to turn on "Unknown Sources" in your phone's security settings. Then open the apk file. It will install it.
+Since this is not in the appstore, you need to Download the linked apk file below. Somehow get it to your phone (email, SD Card). Then, you need to turn on "Unknown Sources" in your phone's security settings. Then open the apk file. It will install it.
 
 
 USE:
-
 Open the game, go into settings and check the "Use Cheats" checkbox for cheats to work.
 
 
 DOWNLOAD:
+http://www.any1.org/cPixelDungeon.apk
 
-Download the apk here
+
+SOURCE CODE:
+https://github.com/sottey/cPixelDungeon
+
 
 POSSIBLE FUTURE FEATURES:
-
 Increase of armor/weapon levels
-Able to install without uninstalling PixelDungeon
-Upgrade to newest 1.7.2 code
+Upgrade to newest 1.7.2 code (when it is made available)
 Break out different cheats to be able to configure which cheats are active

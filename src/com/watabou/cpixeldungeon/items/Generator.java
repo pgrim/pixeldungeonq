@@ -19,6 +19,7 @@ package com.watabou.cpixeldungeon.items;
 
 import java.util.HashMap;
 
+import com.watabou.cpixeldungeon.Cheats;
 import com.watabou.cpixeldungeon.Dungeon;
 import com.watabou.cpixeldungeon.actors.hero.Hero;
 import com.watabou.cpixeldungeon.actors.mobs.npcs.Wandmaker.Rotberry;
@@ -93,7 +94,14 @@ public class Generator {
 			ScrollOfWeaponUpgrade.class,
 			ScrollOfPsionicBlast.class,
 			ScrollOfMirrorImage.class };
-		Category.SCROLL.probs = new float[]{ 30, 10, 15, 0, 10, 15, 12, 8, 8, 0, 4, 6 };
+		if (Cheats.Enabled)
+		{
+			Category.SCROLL.probs = new float[]{ 00, 10, 25, 0, 10, 25, 12, 8, 8, 0, 14, 6 };
+		}
+		else
+		{
+			Category.SCROLL.probs = new float[]{ 30, 10, 15, 0, 10, 15, 12, 8, 8, 0, 4, 6 };
+		}
 		
 		Category.POTION.classes = new Class<?>[]{ 
 			PotionOfHealing.class, 

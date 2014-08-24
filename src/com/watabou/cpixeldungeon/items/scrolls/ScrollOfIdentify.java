@@ -61,7 +61,7 @@ public class ScrollOfIdentify extends InventoryScroll {
 	
 	@Override
 	public String desc() {
-		if (Cheats.ScrollOfIdentifyGivesMindVisionGivesMindVision())
+		if (Cheats.ScrollOfIdentifyGivesMindVision())
 		{
 		 return  "With Cheats: After reading this, your mind will become attuned to the psychic signature " +
 					"of distant creatures, enabling you to sense biological presences through walls. " +

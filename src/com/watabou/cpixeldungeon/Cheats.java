@@ -65,20 +65,13 @@ public enum Cheats {
 		_ringOfDetectionGivesMindVision = value;
 	}
 	
-	private static boolean _scrollOfIdentifyGivesMindVision = true;
+	private static boolean _scrollOfIdentifyGivesMindVision = false;
 
-	public static boolean ScrollOfIdentifyGivesMindVisionGivesMindVision() {
+	public static boolean ScrollOfIdentifyGivesMindVision() {
 		return _scrollOfIdentifyGivesMindVision && Enabled;
 	}
 	public static void SetScrollOfIdentifyGivesMindVision(boolean value) {
 		_scrollOfIdentifyGivesMindVision = value;
 	}
-	
-	/*
-	 * public static boolean ShowScrollInfo = true; public static boolean
-	 * ShowArmorInfo = true; public static boolean ShowWeaponInfo = true; public
-	 * static boolean ShowWandInfo = true; public static boolean ShowRingInfo =
-	 * true;
-	 */
 
 }
