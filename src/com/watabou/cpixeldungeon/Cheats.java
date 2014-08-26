@@ -73,5 +73,14 @@ public enum Cheats {
 	public static void SetScrollOfIdentifyGivesMindVision(boolean value) {
 		_scrollOfIdentifyGivesMindVision = value;
 	}
+	
+	private static boolean _useImmersiveMode = false;
+
+	public static boolean UseImmersiveMode() {
+		return _useImmersiveMode && Enabled;
+	}
+	public static void SetUseImmersiveMode(boolean value) {
+		_useImmersiveMode = value;
+	}
 
 }

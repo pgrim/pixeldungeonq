@@ -18,6 +18,7 @@
 package com.watabou.cpixeldungeon.windows;
 
 import com.watabou.cpixeldungeon.Assets;
+import com.watabou.cpixeldungeon.Cheats;
 import com.watabou.cpixeldungeon.cPixelDungeon;
 import com.watabou.cpixeldungeon.scenes.PixelScene;
 import com.watabou.cpixeldungeon.ui.CheckBox;
@@ -37,6 +38,7 @@ public class WndSettings extends Window {
 	private static final String TXT_MUSIC	= "Music";
 	
 	private static final String TXT_CHEATS	= "Use Cheats";
+	private static final String TXT_IMMERSIVE	= "Immersive Mode";
 	
 	private static final String TXT_SOUND	= "Sound FX";
 	
@@ -121,6 +123,17 @@ public class WndSettings extends Window {
 		btnCheats.checked( cPixelDungeon.cheats() );
 		add( btnCheats );
 		
+		CheckBox btnImmersive = new CheckBox( TXT_IMMERSIVE ) {
+			@Override
+			protected void onClick() {
+				super.onClick();
+				Cheats.SetUseImmersiveMode( checked() );
+			}
+		};
+		btnImmersive.setRect( 0, btnCheats.bottom() + GAP, WIDTH, BTN_HEIGHT );
+		btnImmersive.checked( Cheats.UseImmersiveMode() );
+		add( btnImmersive );		
+		
 		CheckBox btnSound = new CheckBox( TXT_SOUND ) {
 			@Override
 			protected void onClick() {
@@ -129,7 +142,7 @@ public class WndSettings extends Window {
 				Sample.INSTANCE.play( Assets.SND_CLICK );
 			}
 		};
-		btnSound.setRect( 0, btnCheats.bottom() + GAP, WIDTH, BTN_HEIGHT );
+		btnSound.setRect( 0, btnImmersive.bottom() + GAP, WIDTH, BTN_HEIGHT );
 		btnSound.checked( cPixelDungeon.soundFx() );
 		add( btnSound );
 		

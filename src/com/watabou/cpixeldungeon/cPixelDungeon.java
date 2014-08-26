@@ -21,6 +21,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
+import android.view.View;
 
 import com.watabou.cpixeldungeon.scenes.GameScene;
 import com.watabou.cpixeldungeon.scenes.TitleScene;
@@ -90,16 +91,6 @@ public class cPixelDungeon extends Game {
 	protected void onCreate( Bundle savedInstanceState ) {
 		super.onCreate( savedInstanceState );
 		
-	/*	if (android.os.Build.VERSION.SDK_INT >= 19) {
-			getWindow().getDecorView().setSystemUiVisibility( 
-				View.SYSTEM_UI_FLAG_LAYOUT_STABLE | 
-				View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | 
-				View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | 
-				View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | 
-				View.SYSTEM_UI_FLAG_FULLSCREEN | 
-				View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY );
-		}*/
-		
 		Display display = instance.getWindowManager().getDefaultDisplay();
 		boolean landscape = display.getWidth() > display.getHeight();
 		
@@ -108,12 +99,29 @@ public class cPixelDungeon extends Game {
 		}
 		
 		Cheats.Enabled = cheats();
+		
 		Music.INSTANCE.enable( music() );
 		Sample.INSTANCE.enable( soundFx() );
+		
+		if (Cheats.UseImmersiveMode())
+		{
+			if (android.os.Build.VERSION.SDK_INT >= 19) 
+			{
+				getWindow().getDecorView().setSystemUiVisibility
+				( 
+					View.SYSTEM_UI_FLAG_LAYOUT_STABLE | 
+					View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | 
+					View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | 
+					View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | 
+					View.SYSTEM_UI_FLAG_FULLSCREEN | 
+					View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY 
+				);
+			}
+		}
 	}
 	
 	/*
-	 * ---> Prefernces
+	 * ---> Preferences
 	 */
 	
 	public static void landscape( boolean value ) {

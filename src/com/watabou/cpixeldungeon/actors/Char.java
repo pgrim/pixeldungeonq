@@ -137,8 +137,13 @@ public abstract class Char extends Actor {
 			}
 			
 			// Refactoring needed!
-			int dr = this instanceof Hero && ((Hero)this).usingRanged && ((Hero)this).subClass == HeroSubClass.SNIPER ? 
-				0 : Random.IntRange( 0, enemy.dr() );
+			
+			// If this is the hero AND the hero is using a ranged weapon AND is a sniper...
+			// Then dr is 0 for defender, else it is random.
+			int dr = this instanceof Hero && 
+					((Hero)this).usingRanged &&
+					((Hero)this).subClass == HeroSubClass.SNIPER 
+					? 0 : Random.IntRange( 0, enemy.dr());
 			
 			int dmg = damageRoll();
 			int effectiveDamage = Math.max( dmg - dr, 0 );;
