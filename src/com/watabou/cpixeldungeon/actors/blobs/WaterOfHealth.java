@@ -45,6 +45,13 @@ public class WaterOfHealth extends WellWater {
 		
 		PotionOfHealing.heal( hero );
 		hero.belongings.uncurseEquipped();
+		DewVial vial = hero.belongings.getItem( DewVial.class );
+		
+		if (vial != null)
+		{
+			vial.fill();
+		}
+		
 		((Hunger)hero.buff( Hunger.class )).satisfy( Hunger.STARVING );
 		
 		CellEmitter.get( pos ).start( ShaftParticle.FACTORY, 0.2f, 3 );

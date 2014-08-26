@@ -35,13 +35,13 @@ public class AboutScene extends PixelScene {
 
 	private static final String TXT = 
 		"Code & graphics: Watabou\n" +
-		"Cheat Mod: sottey\n" +
+		"Cheat Mod: sottey\n" +		
 		"Music: Cube_Code\n\n" + 
 		"This game is inspired by Brian Walker's Brogue. " +
 		"Try it on Windows, Mac OS or Linux - it's awesome! ;)\n\n" +
-		"Please visit official website for additional info:" ;
+		"Please visit official CPD website for additional info:" ;
 	
-	private static final String LNK = "pixeldungeon.watabou.ru";
+	private static final String LNK = "github.com/sottey/cPixelDungeon/wiki";
 	
 	@Override
 	public void create() {
