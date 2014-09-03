@@ -19,6 +19,7 @@ package com.watabou.cpixeldungeon.actors.hero;
 
 import com.watabou.cpixeldungeon.Assets;
 import com.watabou.cpixeldungeon.Badges;
+import com.watabou.cpixeldungeon.Cheats;
 import com.watabou.cpixeldungeon.Dungeon;
 import com.watabou.cpixeldungeon.items.TomeOfMastery;
 import com.watabou.cpixeldungeon.items.armor.ClothArmor;
@@ -156,8 +157,10 @@ public enum HeroClass {
 	}
 	
 	private static void initHuntress( Hero hero ) {
-		
-		hero.HP = (hero.HT -= 5);
+		if (!Cheats.Enabled)
+		{
+			hero.HP = (hero.HT -= 5);
+		}
 		
 		(hero.belongings.weapon = new Dagger()).identify();
 		(hero.belongings.armor = new ClothArmor()).identify();

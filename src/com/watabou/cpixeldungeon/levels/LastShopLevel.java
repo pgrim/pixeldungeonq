@@ -21,6 +21,7 @@ import java.util.List;
 
 import com.watabou.cpixeldungeon.Assets;
 import com.watabou.cpixeldungeon.Bones;
+import com.watabou.cpixeldungeon.Cheats;
 import com.watabou.cpixeldungeon.actors.Actor;
 import com.watabou.cpixeldungeon.actors.mobs.npcs.Imp;
 import com.watabou.cpixeldungeon.items.Heap;
@@ -113,7 +114,14 @@ public class LastShopLevel extends RegularLevel {
 		if (roomShop == null || shopSquare < 30) {
 			return false;
 		} else {
-			roomShop.type = Imp.Quest.isCompleted() ? Room.Type.SHOP : Room.Type.STANDARD;
+			if (Cheats.Enabled)
+			{
+				roomShop.type = Room.Type.SHOP;
+			}
+			else
+			{
+				roomShop.type = Imp.Quest.isCompleted() ? Room.Type.SHOP : Room.Type.STANDARD;
+			}
 		}
 		
 		paint();

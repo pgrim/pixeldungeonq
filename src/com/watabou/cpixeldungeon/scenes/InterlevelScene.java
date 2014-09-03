@@ -318,6 +318,7 @@ public class InterlevelScene extends PixelScene {
 		
 		Actor.fixTime(); 
 		
+		// TODO: Is this the nerf that allows multiple lloyd's beacons?
 		if (Dungeon.bossLevel()) {
 			Dungeon.hero.resurrect( Dungeon.depth );
 			Dungeon.depth--;
