@@ -17,6 +17,7 @@
  */
 package com.watabou.cpixeldungeon.items;
 
+import com.watabou.cpixeldungeon.Cheats;
 import com.watabou.cpixeldungeon.sprites.ItemSpriteSheet;
 
 public class Ankh extends Item {
@@ -39,9 +40,17 @@ public class Ankh extends Item {
 	
 	@Override
 	public String info() {
-		return 
-			"The ancient symbol of immortality grants an ability to return to life after death. " +
-			"Upon resurrection all non-equipped items are lost.";
+		if (Cheats.Enabled)
+		{
+			return 
+					"The ancient symbol of immortality grants an ability to return to life after death. ";		
+		}
+		else
+		{
+			return 
+				"The ancient symbol of immortality grants an ability to return to life after death. " +
+				"Upon resurrection all non-equipped items are lost.";
+		}
 	}
 	
 	@Override

@@ -168,6 +168,12 @@ public enum HeroClass {
 		boomerang.identify().collect();
 		new Food().identify().collect();
 		
+		if (Cheats.Enabled)
+		{
+			boomerang.upgrade(2);
+			hero.belongings.weapon.upgrade(2);
+		}
+		
 		if (Badges.isUnlocked( Badges.Badge.MASTERY_HUNTRESS )) {
 			new TomeOfMastery().collect();
 		}

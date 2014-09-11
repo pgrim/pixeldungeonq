@@ -1112,7 +1112,7 @@ public class Hero extends Char {
 			
 		} else {
 			
-			Dungeon.deleteGame( Dungeon.hero.heroClass, false );
+			// Dungeon.deleteGame( Dungeon.hero.heroClass, false );
 			GameScene.show( new WndResurrect( ankh, cause ) );
 			
 		}

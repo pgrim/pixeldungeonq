@@ -19,6 +19,7 @@ package com.watabou.cpixeldungeon.levels.painters;
 
 import java.util.ArrayList;
 
+import com.watabou.cpixeldungeon.Cheats;
 import com.watabou.cpixeldungeon.Dungeon;
 import com.watabou.cpixeldungeon.actors.mobs.Mob;
 import com.watabou.cpixeldungeon.actors.mobs.npcs.ImpShopkeeper;
@@ -131,7 +132,11 @@ public class ShopPainter extends Painter {
 			items.add( Generator.random( Generator.Category.POTION ) );
 		}
 		
-		items.add( new ScrollOfIdentify() );
+		if (!Cheats.Enabled)
+		{
+			items.add( new ScrollOfIdentify() );
+		}
+		
 		items.add( new ScrollOfRemoveCurse() );
 		items.add( new ScrollOfMagicMapping() );
 		items.add( Generator.random( Generator.Category.SCROLL ) );
