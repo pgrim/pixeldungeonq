@@ -1102,7 +1102,8 @@ public class Hero extends Char {
 			return;
 		}
 		
-		Actor.fixTime();
+		Actor.fixTime();		
+		
 		super.die( cause );
 		
 		Ankh ankh = (Ankh)belongings.getItem( Ankh.class );
@@ -1111,8 +1112,11 @@ public class Hero extends Char {
 			reallyDie( cause );
 			
 		} else {
+			if (!Cheats.Enabled)
+			{
+				Dungeon.deleteGame( Dungeon.hero.heroClass, false );			
+			}
 			
-			// Dungeon.deleteGame( Dungeon.hero.heroClass, false );
 			GameScene.show( new WndResurrect( ankh, cause ) );
 			
 		}
@@ -1318,8 +1322,11 @@ public class Hero extends Char {
 	public void resurrect( int resetLevel ) {
 		
 		HP = HT;
-		Dungeon.gold = 0;
-		exp = 0;
+		if (!Cheats.Enabled)
+		{
+			Dungeon.gold = 0;
+			exp = 0;
+		}
 		
 		belongings.resurrect( resetLevel );
 

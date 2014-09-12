@@ -64,8 +64,7 @@ public class WndResurrect extends Window {
 		RedButton btnYes = new RedButton( TXT_YES ) {
 			@Override
 			protected void onClick() {
-				hide();
-				
+				hide();				
 				Statistics.ankhsUsed++;
 				
 				InterlevelScene.mode = InterlevelScene.Mode.RESURRECT;

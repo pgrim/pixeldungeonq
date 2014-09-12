@@ -20,7 +20,9 @@ package com.watabou.cpixeldungeon.actors.hero;
 import java.util.Iterator;
 
 import com.watabou.cpixeldungeon.Badges;
+import com.watabou.cpixeldungeon.Cheats;
 import com.watabou.cpixeldungeon.Dungeon;
+import com.watabou.cpixeldungeon.items.Ankh;
 import com.watabou.cpixeldungeon.items.Item;
 import com.watabou.cpixeldungeon.items.KindOfWeapon;
 import com.watabou.cpixeldungeon.items.armor.Armor;
@@ -168,34 +170,45 @@ public class Belongings implements Iterable<Item> {
 	
 	public void resurrect( int depth ) {
 
-		for (Item item : backpack.items.toArray( new Item[0])) {
-			if (item instanceof Key) {
-				if (((Key)item).depth == depth) {
+		if (!Cheats.Enabled){
+			for (Item item : backpack.items.toArray( new Item[0])) {
+				if (item instanceof Key) {
+					if (((Key)item).depth == depth) {
+						item.detachAll( backpack );
+					}
+				} else if (item.unique) {
+					
+				} else if (!item.isEquipped( owner )) {
 					item.detachAll( backpack );
 				}
-			} else if (item.unique) {
-				
-			} else if (!item.isEquipped( owner )) {
-				item.detachAll( backpack );
+			}
+			
+			if (weapon != null) {
+				weapon.cursed = false;
+				weapon.activate( owner );
+			}
+			
+			if (armor != null) {
+				armor.cursed = false;
+			}
+			
+			if (ring1 != null) {
+				ring1.cursed = false;
+				ring1.activate( owner );
+			}
+			if (ring2 != null) {
+				ring2.cursed = false;
+				ring2.activate( owner );
 			}
 		}
-		
-		if (weapon != null) {
-			weapon.cursed = false;
-			weapon.activate( owner );
-		}
-		
-		if (armor != null) {
-			armor.cursed = false;
-		}
-		
-		if (ring1 != null) {
-			ring1.cursed = false;
-			ring1.activate( owner );
-		}
-		if (ring2 != null) {
-			ring2.cursed = false;
-			ring2.activate( owner );
+		else
+		{
+			Ankh ankh = (Ankh)this.getItem( Ankh.class );
+			if (ankh != null)
+			{
+				this.backpack.items.remove(ankh);
+			}
+			
 		}
 	}
 	
