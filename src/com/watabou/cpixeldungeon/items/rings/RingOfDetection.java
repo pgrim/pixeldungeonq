@@ -35,7 +35,7 @@ public class RingOfDetection extends Ring {
 		if (super.doEquip( hero )) {
 			if (Cheats.RingOfDetectionGivesMindVision())
 			{
-				Buff.affect( hero, MindVision.class, 100 );
+				Buff.affect( hero, MindVision.class, 100000 );
 				Dungeon.observe();
 				
 				if (Dungeon.level.mobs.size() > 0) {
