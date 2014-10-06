@@ -53,7 +53,14 @@ public class Belongings implements Iterable<Item> {
 		
 		backpack = new Bag() {{
 			name = "backpack";
-			size = BACKPACK_SIZE;
+//			if (Cheats.Enabled)
+//			{
+//				size = BACKPACK_SIZE + 4;
+//			}
+//			else
+//			{
+				size = BACKPACK_SIZE;
+//			}
 		}};
 		backpack.owner = owner;
 	}

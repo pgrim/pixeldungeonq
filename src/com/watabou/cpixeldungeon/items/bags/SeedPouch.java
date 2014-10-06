@@ -27,7 +27,14 @@ public class SeedPouch extends Bag {
 		name = "seed pouch";
 		image = ItemSpriteSheet.POUCH;
 		
-		size = 8;
+//		if (Cheats.Enabled)
+//		{
+			size = 8;
+//		}
+//		else
+//		{
+//			size = 12;
+//		}
 	}
 	
 	@Override

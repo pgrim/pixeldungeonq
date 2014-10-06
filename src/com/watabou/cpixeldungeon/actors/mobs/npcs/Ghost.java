@@ -20,6 +20,7 @@ package com.watabou.cpixeldungeon.actors.mobs.npcs;
 import java.util.HashSet;
 
 import com.watabou.cpixeldungeon.Assets;
+import com.watabou.cpixeldungeon.Cheats;
 import com.watabou.cpixeldungeon.Dungeon;
 import com.watabou.cpixeldungeon.Journal;
 import com.watabou.cpixeldungeon.actors.Actor;
@@ -294,6 +295,11 @@ public class Ghost extends Mob.NPC {
 					if (another.level > armor.level) {
 						armor = (Armor)another;
 					}
+				}
+				if (Cheats.Enabled)
+				{
+					weapon.upgrade(2);
+					armor.upgrade(2);
 				}
 				weapon.identify();
 				armor.identify();

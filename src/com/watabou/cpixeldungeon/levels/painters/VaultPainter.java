@@ -17,6 +17,7 @@
  */
 package com.watabou.cpixeldungeon.levels.painters;
 
+import com.watabou.cpixeldungeon.Cheats;
 import com.watabou.cpixeldungeon.Dungeon;
 import com.watabou.cpixeldungeon.items.Generator;
 import com.watabou.cpixeldungeon.items.Item;
@@ -55,6 +56,12 @@ public class VaultPainter extends Painter {
 			level.drop( i1, c ).type = Type.CRYSTAL_CHEST;
 			level.drop( i2, c + Level.NEIGHBOURS8[Random.Int( 8 )]).type = Type.CRYSTAL_CHEST;
 			level.addItemToSpawn( new GoldenKey( Dungeon.depth ) );
+			
+			if (Cheats.Enabled)
+			{
+				level.addItemToSpawn( new GoldenKey( Dungeon.depth ) );
+			}
+			
 			break;
 			
 		case 2:

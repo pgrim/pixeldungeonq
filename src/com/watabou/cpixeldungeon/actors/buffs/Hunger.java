@@ -106,7 +106,7 @@ public class Hunger extends Buff implements Hero.Doom {
 			
 		} else {
 			
-			diactivate();
+			deactivate();
 			
 		}
 		
