@@ -105,7 +105,7 @@ public enum HeroClass {
 	}
 	
 	private static void initWarrior( Hero hero ) {
-		hero.STR = hero.STR + 1;
+		hero.STR = hero.STR + 10;
 		
 		(hero.belongings.weapon = new ShortSword()).identify();
 		(hero.belongings.armor = new PlateArmor()).identify();
