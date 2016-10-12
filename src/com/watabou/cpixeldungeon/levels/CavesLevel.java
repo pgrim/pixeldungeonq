@@ -200,15 +200,15 @@ public class CavesLevel extends RegularLevel {
 	public String tileDesc( int tile ) {
 		switch (tile) {
 		case Terrain.ENTRANCE:
-			return "The ladder leads up to the upper depth.";
+			return "The ladder leads up to the upper depths.";
 		case Terrain.EXIT:
-			return "The ladder leads down to the lower depth.";
+			return "The ladder leads down to the lower depths of hell.";
 		case Terrain.HIGH_GRASS:
-			return "Huge mushrooms block the view.";
+			return "fuck...";
 		case Terrain.WALL_DECO:
-			return "A vein of some ore is visible on the wall. Gold?";
+			return "A vein of some ore is visible on the wall. Troll shit?";
 		case Terrain.BOOKSHELF:
-			return "Who would need a bookshelf in a cave?";
+			return "Draculas bookshelf?";
 		default:
 			return super.tileDesc( tile );
 		}
