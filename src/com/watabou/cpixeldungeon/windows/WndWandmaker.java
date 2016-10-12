@@ -33,10 +33,10 @@ import com.watabou.noosa.BitmapTextMultiline;
 public class WndWandmaker extends Window {
 	
 	private static final String TXT_MESSAGE	= 
-		"Oh, I see you have succeeded! I do hope it hasn't troubled you too much. " +
-		"As I promised, you can choose one of my high quality wands.";
-	private static final String TXT_BATTLE		= "Battle wand";
-	private static final String TXT_NON_BATTLE	= "Non-battle wand";
+		"Oh, I see you have succeeded! I knew you were a true fairy. " +
+		"As I promised, you can choose one of my high quality fairy wands...fucking fairy";
+	private static final String TXT_BATTLE		= "sparkle wand";
+	private static final String TXT_NON_BATTLE	= "glitter wand";
 	
 	private static final String TXT_FARAWELL	= "Good luck in your quest, %s!";
 	
