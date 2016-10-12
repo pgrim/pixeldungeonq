@@ -32,8 +32,8 @@ import com.watabou.noosa.Game;
 public class WndResurrect extends Window {
 	
 	private static final String TXT_MESSAGE	= "You died, but you were given another chance to win this dungeon. Will you take it?";
-	private static final String TXT_YES		= "Yes, I will fight!";
-	private static final String TXT_NO		= "No, I give up";
+	private static final String TXT_YES		= "I guess but I'll just die again...";
+	private static final String TXT_NO		= "Nah fuck it";
 	
 	private static final int WIDTH		= 120;
 	private static final int BTN_HEIGHT	= 18;
