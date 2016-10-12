@@ -108,9 +108,9 @@ public enum HeroClass {
 		hero.STR = hero.STR + 1;
 		
 		(hero.belongings.weapon = new ShortSword()).identify();
-		(hero.belongings.armor = new ClothArmor()).identify();
-		new Dart( 8 ).identify().collect();
-		new Food().identify().collect();
+		(hero.belongings.armor = new PlateArmor()).identify();
+		new Dart( 10 ).identify().collect();
+		new Food( 5 ).identify().collect();
 		
 		if (Badges.isUnlocked( Badges.Badge.MASTERY_WARRIOR )) {
 			new TomeOfMastery().collect();
@@ -124,7 +124,7 @@ public enum HeroClass {
 	private static void initMage( Hero hero ) {	
 		(hero.belongings.weapon = new Knuckles()).identify();
 		(hero.belongings.armor = new ClothArmor()).identify();
-		new Food().identify().collect();
+		new Food( 5 ).identify().collect();
 		
 		WandOfMagicMissile wand = new WandOfMagicMissile();
 		wand.identify().collect();
@@ -135,7 +135,7 @@ public enum HeroClass {
 		
 		Dungeon.quickslot = wand;
 		
-		new ScrollOfIdentify().setKnown();
+		new ScrollOfIdentify( 5 ).setKnown();
 	}
 	
 	private static void initRogue( Hero hero ) {
@@ -143,7 +143,7 @@ public enum HeroClass {
 		(hero.belongings.armor = new ClothArmor()).identify();
 		(hero.belongings.ring1 = new RingOfShadows()).upgrade().identify();
 		new Dart( 8 ).identify().collect();
-		new Food().identify().collect();
+		new Food( 5 ).identify().collect();
 		
 		hero.belongings.ring1.activate( hero );
 		
@@ -159,14 +159,14 @@ public enum HeroClass {
 	private static void initHuntress( Hero hero ) {
 		if (!Cheats.Enabled)
 		{
-			hero.HP = (hero.HT -= 5);
+			hero.HP = (hero.HT -= 10);
 		}
 		
 		(hero.belongings.weapon = new Dagger()).identify();
-		(hero.belongings.armor = new ClothArmor()).identify();
+		(hero.belongings.armor = new LeatherArmor()).identify();
 		Boomerang boomerang = new Boomerang();
 		boomerang.identify().collect();
-		new Food().identify().collect();
+		new Food( 5 ).identify().collect();
 		
 		if (Cheats.Enabled)
 		{
