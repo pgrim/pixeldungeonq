@@ -28,11 +28,11 @@ import com.watabou.noosa.ui.Component;
 
 public class WndInfoMob extends WndTitledMessage {
 	
-	private static final String TXT_SLEEPNIG	= "\n\nThis %s is sleeping.";
-	private static final String TXT_HUNTING		= "\n\nThis %s is hunting.";
-	private static final String TXT_WANDERING	= "\n\nThis %s is wandering.";
-	private static final String TXT_FLEEING		= "\n\nThis %s is fleeing.";
-	private static final String TXT_PASSIVE		= "\n\nThe %s is passive.";
+	private static final String TXT_SLEEPNIG	= "\n\nThis %s has a hangover.";
+	private static final String TXT_HUNTING		= "\n\nThis %s is hunting bitches.";
+	private static final String TXT_WANDERING	= "\n\nThis %s is deaf, blind, and mute.";
+	private static final String TXT_FLEEING		= "\n\nThis %s is a terrorist.";
+	private static final String TXT_PASSIVE		= "\n\nThe %s is taking a shit.";
 	
 	public WndInfoMob( Mob mob ) {
 		
