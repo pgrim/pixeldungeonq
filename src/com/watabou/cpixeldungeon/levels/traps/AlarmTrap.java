@@ -39,7 +39,7 @@ public class AlarmTrap {
 		}
 		
 		if (Dungeon.visible[pos]) {
-			GLog.w( "The trap emits a piercing sound that echoes throughout the dungeon!" );
+			GLog.w( "The trap emits an irresistable mating call!" );
 			CellEmitter.center( pos ).start( Speck.factory( Speck.SCREAM ), 0.3f, 3 );
 		}
 		
