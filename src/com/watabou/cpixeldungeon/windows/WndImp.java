@@ -35,8 +35,8 @@ public class WndImp extends Window {
 	private static final String TXT_MESSAGE	= 
 		"Oh yes! You are my hero!\n" +
 		"Regarding your reward, I don't have cash with me right now, but I have something better for you. " +
-		"This is my family heirloom ring: my granddad took it off a dead paladin's finger.";
-	private static final String TXT_REWARD		= "Take the ring";
+		"This is my family heirloom ring: i killed my dad for it.";
+	private static final String TXT_REWARD		= "kill him for ring";
 	
 	private static final int WIDTH		= 120;
 	private static final int BTN_HEIGHT	= 18;
