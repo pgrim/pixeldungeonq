@@ -28,8 +28,8 @@ import com.watabou.noosa.BitmapTextMultiline;
 
 public class WndChooseWay extends Window {
 	
-	private static final String TXT_MESSAGE	= "Which way will you follow?";
-	private static final String TXT_CANCEL	= "I'll decide later";
+	private static final String TXT_MESSAGE	= "Which tome will you read?";
+	private static final String TXT_CANCEL	= "I can't read...";
 	
 	private static final int WIDTH		= 120;
 	private static final int BTN_HEIGHT	= 18;
