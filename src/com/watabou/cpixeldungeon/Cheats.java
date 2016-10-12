@@ -4,8 +4,8 @@ public enum Cheats {
 	INSTANCE;
 
 	public static boolean Enabled = false;
-	public static int StartingStrength = 20;
-	public static int StartingHitPoints = 30;
+	public static int StartingStrength = 50;
+	public static int StartingHitPoints = 60;
 
 	private static boolean _enableHuntress = true;
 
