@@ -21,7 +21,7 @@ import com.watabou.cpixeldungeon.ui.Icons;
 
 public class WndError extends WndTitledMessage {
 
-	private static final String TXT_TITLE =  "ERROR";
+	private static final String TXT_TITLE =  "WTF";
 	
 	public WndError( String message ) {
 		super( Icons.WARNING.get(), TXT_TITLE, message );
