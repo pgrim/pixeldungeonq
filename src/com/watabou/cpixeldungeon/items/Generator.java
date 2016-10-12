@@ -96,11 +96,11 @@ public class Generator {
 			ScrollOfMirrorImage.class };
 		if (Cheats.Enabled)
 		{
-			Category.SCROLL.probs = new float[]{ 00, 10, 25, 0, 10, 25, 12, 8, 8, 0, 14, 6 };
+			Category.SCROLL.probs = new float[]{ 00, 10, 25, 30, 10, 25, 6, 8, 8, 15, 14, 6 };
 		}
 		else
 		{
-			Category.SCROLL.probs = new float[]{ 30, 10, 15, 0, 10, 15, 12, 8, 8, 0, 4, 6 };
+			Category.SCROLL.probs = new float[]{ 30, 10, 15, 10, 10, 15, 12, 8, 8, 10, 4, 6 };
 		}
 		
 		Category.POTION.classes = new Class<?>[]{ 
@@ -116,7 +116,7 @@ public class Generator {
 			PotionOfInvisibility.class,
 			PotionOfMight.class,
 			PotionOfFrost.class };
-		Category.POTION.probs = new float[]{ 45, 4, 15, 10, 15, 10, 0, 20, 12, 10, 0, 10 };
+		Category.POTION.probs = new float[]{ 60, 30, 15, 10, 15, 10, 20, 20, 12, 10, 20, 10 };
 		
 		Category.WAND.classes = new Class<?>[]{ 
 			WandOfTeleportation.class, 
@@ -132,7 +132,7 @@ public class Generator {
 			WandOfMagicMissile.class,
 			WandOfDisintegration.class,
 			WandOfAvalanche.class };
-		Category.WAND.probs = new float[]{ 10, 10, 15, 6, 10, 11, 15, 10, 6, 10, 0, 5, 5 };
+		Category.WAND.probs = new float[]{ 0, 5, 15, 6, 7, 11, 15, 7, 6, 10, 10, 15, 5 };
 		
 		Category.WEAPON.classes = new Class<?>[]{ 
 			Dagger.class, 
@@ -153,7 +153,7 @@ public class Generator {
 			Shuriken.class,
 			Boomerang.class,
 			Tamahawk.class };
-		Category.WEAPON.probs = new float[]{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 1 };
+		Category.WEAPON.probs = new float[]{ 0, 0, 1, 1, 5, 1, 10, 10, 10, 1, 0, 0, 1, 3, 0, 2, 0, 5 };
 		
 		Category.ARMOR.classes = new Class<?>[]{ 
 			ClothArmor.class, 
@@ -161,13 +161,13 @@ public class Generator {
 			MailArmor.class, 
 			ScaleArmor.class, 
 			PlateArmor.class };
-		Category.ARMOR.probs = new float[]{ 1, 1, 1, 1, 1 };
+		Category.ARMOR.probs = new float[]{ 1, 2, 3, 4, 5 };
 		
 		Category.FOOD.classes = new Class<?>[]{ 
 			Food.class, 
 			Pasty.class,
 			MysteryMeat.class };
-		Category.FOOD.probs = new float[]{ 4, 1, 0 };
+		Category.FOOD.probs = new float[]{ 5, 2, 0 };
 			
 		Category.RING.classes = new Class<?>[]{ 
 			RingOfMending.class,
@@ -182,7 +182,7 @@ public class Generator {
 			RingOfElements.class,
 			RingOfHaggler.class,
 			RingOfThorns.class };
-		Category.RING.probs = new float[]{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0 };
+		Category.RING.probs = new float[]{ 1, 1, 1, 1, 1, 5, 5, 1, 4, 1, 0, 0 };
 		
 		Category.SEED.classes = new Class<?>[]{ 
 			Firebloom.Seed.class,
