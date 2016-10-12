@@ -37,11 +37,11 @@ public class WndSadGhost extends Window {
 		"And you can take one of these items, maybe they " +
 		"will be useful to you in your journey...";
 	private static final String TXT_RAT	= 
-		"Yes! The ugly creature is slain and I can finally rest... " +
-		"Please take one of these items, maybe they " +
-		"will be useful to you in your journey...";
-	private static final String TXT_WEAPON	= "Ghost's weapon";
-	private static final String TXT_ARMOR	= "Ghost's armor";
+		"Yes! The ugly bae is slain and I can finally rest... " +
+		"Please take one of these items and fuck off, maybe they " +
+		"will be useful to you in your decent to hell you";
+	private static final String TXT_WEAPON	= "Ghost's cock";
+	private static final String TXT_ARMOR	= "Ghost's balls";
 	
 	private static final int WIDTH		= 120;
 	private static final int BTN_HEIGHT	= 18;
@@ -96,7 +96,7 @@ public class WndSadGhost extends Window {
 			Dungeon.level.drop( reward, ghost.pos ).sprite.drop();
 		}
 		
-		ghost.yell( "Farewell, adventurer!" );
+		ghost.yell( "Hope you die, adventurer!" );
 		ghost.die( null );
 		
 		Ghost.Quest.complete();
