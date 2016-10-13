@@ -33,8 +33,8 @@ public class PotionOfStrength extends Potion {
 		setKnown();
 		
 		hero.STR++;
-		hero.sprite.showStatus( CharSprite.POSITIVE, "+1 str" );
-		GLog.p( "Newfound strength surges through your body." );
+		hero.sprite.showStatus( CharSprite.POSITIVE, "+3 str" );
+		GLog.p( "Newfound roids surges through your body." );
 		
 		Badges.validateStrengthAttained();
 	}
@@ -43,11 +43,11 @@ public class PotionOfStrength extends Potion {
 	public String desc() {
 		return
 			"This powerful liquid will course through your muscles, " +
-			"permanently increasing your strength by one point.";
+			"permanently increasing your strength like lance armstrong.";
 	}
 	
 	@Override
 	public int price() {
-		return isKnown() ? 100 * quantity : super.price();
+		return isKnown() ? 200 * quantity : super.price();
 	}
 }
