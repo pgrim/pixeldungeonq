@@ -28,12 +28,12 @@ public class ScaleArmor extends Armor {
 	}
 	
 	public ScaleArmor() {
-		super( 4 );
+		super( 8 );
 	}
 	
 	@Override
 	public String desc() {
 		return 
-			"The metal scales sewn onto a leather vest create a flexible, yet protective armor.";
+			"The metal scales sewn onto a leathery scrotum create a flexible, yet protective ballsack.";
 	}
 }
