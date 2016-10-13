@@ -172,6 +172,6 @@ public class Pickaxe extends Weapon {
 	@Override
 	public String info() {
 		return
-			"This is a large and sturdy tool for breaking rocks. Probably it can be used as a weapon.";
+			"This is a large and sturdy tool for breaking cocks. Probably it can be used as a weapon.";
 	}
 }
