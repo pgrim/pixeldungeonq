@@ -42,7 +42,7 @@ public class RatSkull extends Item {
 	@Override
 	public String info() {
 		return
-			"It could be a nice hunting trophy, but it smells too bad to place it on a wall.";
+			"sick freak. who holds on to skulls";
 	}
 	
 	@Override
