@@ -67,8 +67,8 @@ public class Potion extends Item {
 		PotionOfFrost.class
 	};
 	private static final String[] colors = {
-		"turquoise", "crimson", "azure", "jade", "golden", "magenta", 
-		"charcoal", "ivory", "amber", "bistre", "indigo", "silver"};
+		"Mtn. Dew", "Pine Sol", "Goat Piss", "Castrol 5w-30", "CRUNK", "G", 
+		"Pepsi", "Diesel", "Chloroform", "Prego", "Blood of Bae", "Jungle Juice"};
 	private static final Integer[] images = {
 		ItemSpriteSheet.POTION_TURQUOISE, 
 		ItemSpriteSheet.POTION_CRIMSON, 
@@ -213,7 +213,7 @@ public class Potion extends Item {
 	}
 	
 	protected void shatter( int cell ) {
-		GLog.i( "The flask shatters and " + color() + " liquid splashes harmlessly" );
+		GLog.i( "The flask shatters and " + color() + " wastes shamefully on the floor" );
 		Sample.INSTANCE.play( Assets.SND_SHATTER );
 		splash( cell );
 	}
