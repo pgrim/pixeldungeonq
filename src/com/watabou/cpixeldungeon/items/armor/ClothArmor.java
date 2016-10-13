@@ -28,11 +28,11 @@ public class ClothArmor extends Armor {
 	}
 	
 	public ClothArmor() {
-		super( 1 );
+		super( 0 );
 	}
 	
 	@Override
 	public String desc() {
-		return "This lightweight armor offers basic protection.";
+		return "YOLO!!!";
 	}
 }
