@@ -81,7 +81,7 @@ public class FrozenCarpaccio extends Food {
 	}
 	
 	public int price() {
-		return 10 * quantity;
+		return 30 * quantity;
 	};
 	
 	public static Food cook( MysteryMeat ingredient ) {
