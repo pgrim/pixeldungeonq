@@ -23,7 +23,7 @@ import com.watabou.cpixeldungeon.sprites.ItemSpriteSheet;
 public class DwarfToken extends Item {
 	
 	{
-		name = "dwarf token";
+		name = "dwarf scalp";
 		image = ItemSpriteSheet.TOKEN;
 		
 		stackable = true;
@@ -43,8 +43,8 @@ public class DwarfToken extends Item {
 	@Override
 	public String info() {
 		return
-			"Many dwarves and some of their larger creations carry these small pieces of metal of unknown purpose. " +
-			"Maybe they are jewelry or maybe some kind of ID. Dwarves are strange folk.";
+			"Many dwarves harvest metal of unknown purpose. We don't like this " +
+			"You will be rewarded for efforts racist stranger";
 	}
 	
 	@Override
