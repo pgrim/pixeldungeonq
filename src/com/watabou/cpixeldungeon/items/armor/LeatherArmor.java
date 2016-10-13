@@ -28,11 +28,11 @@ public class LeatherArmor extends Armor {
 	}
 	
 	public LeatherArmor() {
-		super( 2 );
+		super( 4 );
 	}
 	
 	@Override
 	public String desc() {
-		return "Armor made from tanned monster hide. Not as light as cloth armor but provides better protection.";
+		return "Armor made from tanned monster ass. Not as light as cloth armor but provides better protection.";
 	}
 }
