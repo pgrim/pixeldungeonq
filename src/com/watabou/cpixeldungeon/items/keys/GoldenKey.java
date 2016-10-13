@@ -27,7 +27,7 @@ public class GoldenKey extends Key {
 	}
 	
 	public GoldenKey() {
-		this( 0 );
+		this( 1 );
 	}
 	
 	public GoldenKey( int depth ) {
