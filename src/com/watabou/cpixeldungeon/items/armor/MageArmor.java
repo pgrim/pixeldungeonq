@@ -51,9 +51,8 @@ public class MageArmor extends ClassArmor {
 	@Override
 	public String desc() {
 		return
-			"Wearing this gorgeous robe, a mage can cast a spell of molten earth: all the enemies " +
-			"in his field of view will be set on fire and unable to move at the same time.";
-	}
+			"Wearing this fabulous robe, a mage can cast a spell of molten earth: all the enemies " +
+			"in his field of view will be set on fire and immobilized by the blazinf fires of hell"	}
 	
 	@Override
 	public void doSpecial() {	
@@ -61,11 +60,11 @@ public class MageArmor extends ClassArmor {
 		for (Mob mob : Dungeon.level.mobs) {
 			if (Level.fieldOfView[mob.pos]) {
 				Buff.affect( mob, Burning.class ).reignite( mob );
-				Buff.prolong( mob, Roots.class, 3 );
+				Buff.prolong( mob, Roots.class, 5 );
 			}
 		}
 		
-		curUser.HP /= 2;
+		curUser.HP /= 4;
 		
 		curUser.spend( Actor.TICK );
 		curUser.sprite.operate( curUser.pos );
